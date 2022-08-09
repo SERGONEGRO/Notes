@@ -1,0 +1,15 @@
+клиент 
+
+1. создаем приложение 
+npx create-react-app notes.frontend --template typescript
+
+2. добавляем файлы /api/api.ts(из NSwag) и client-base.ts(перехватывает запросы 
+и добавляет к ним токен авторизации)
+
+3. добавляем модуль oidc, позволяющий работать с OpenIdConnect
+npm -i oidc-client
+
+4.Для работы с роутингом устанавливаем пакет и типы для него
+npm i react-router-dom
+npm i @types/react-router-dom
+npm i react-bootstrap       -бутстрап
